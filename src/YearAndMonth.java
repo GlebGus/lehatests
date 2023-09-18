@@ -1,7 +1,6 @@
-import static sun.util.calendar.BaseCalendar.*;
-import static sun.util.calendar.BaseCalendar.FEBRUARY;
+import static java.util.Calendar.*;
 
-public class yearAndMonth {
+public class YearAndMonth {
     public static void main(String[] args) {
         System.out.println(getDaysInMonth(100, 2));
     }
