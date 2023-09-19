@@ -6,9 +6,9 @@ public class Runner {
     public static void main(String[] args) {
         SquareLogic squareLogic = new SquareLogic();
         System.out.print("Введите площадь внешнего квадрата: ");
-        double s = DataScanner.enterDoubleFromConsole();
+        double square = DataScanner.enterPositiveDoubleFromConsole();
         System.out.println("Площадь квадрата, вписанного в эту " +
-                "окружность: " + squareLogic.getSquareArea(s) +
-                " Площадь вписанного квадрата меньше площади заданного в " + squareLogic.getSquareRatio(s) + " раз");
+                "окружность: " + squareLogic.getSquareArea(square) +
+                " Площадь вписанного квадрата меньше площади заданного в " + squareLogic.getSquareRatio(square) + " раз");
     }
 }

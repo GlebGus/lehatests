@@ -2,19 +2,19 @@ package task3;
 
 public class SquareLogic {
 
-    public double getSquareArea(double s_op) {
-        double side_op = Math.sqrt(s_op);
-        double radius = side_op / 2;
-        double side_vp = Math.sqrt(2) * radius;
-        double square_vp = Math.pow(side_vp, 2);
-        return square_vp;
+    public double getSquareArea(double circumscribedSquare) {
+        double sideOp = Math.sqrt(circumscribedSquare);
+        return calculateSquare(sideOp);
     }
 
-    public double getSquareRatio(double s_op) {
-        double side_op = Math.sqrt(s_op);
-        double radius = side_op / 2;
-        double side_vp = Math.sqrt(2) * radius;
-        double square_vp = Math.pow(side_vp, 2);
-        return s_op / square_vp;
+    public double getSquareRatio(double squareRatio) {
+        double sideOp = Math.sqrt(squareRatio);
+        return squareRatio / calculateSquare(sideOp);
+    }
+
+    private double calculateSquare(double circumscribedSquare) {
+        double radius = circumscribedSquare / 2;
+        double sideVp = Math.sqrt(2) * radius;
+        return Math.pow(sideVp, 2);
     }
 }
