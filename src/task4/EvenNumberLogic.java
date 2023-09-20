@@ -32,11 +32,6 @@ public class EvenNumberLogic {
                 return true;
             }
         }
-        if (Math.abs(a) % 2 == 0 &&
-                Math.abs(b) % 2 == 0 &&
-                Math.abs(c) % 2 == 0 &&
-                Math.abs(d) % 2 == 0) {
-        }
         return false;
     }
 }
