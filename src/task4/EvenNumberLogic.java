@@ -1,6 +1,7 @@
 package task4;
 
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public class EvenNumberLogic {
     public boolean evenNumber(int a, int b, int c, int d) {
@@ -36,8 +37,9 @@ public class EvenNumberLogic {
         }
         return false;
     }
-    public boolean evenNumber1(int[] numbers){
-        return Arrays.stream(numbers).filter(n -> n %2== 0)
-                .count() >=2;
+
+    public boolean evenNumber1(int a, int b, int c, int d) {
+        return Stream.of(a, b, c, d).filter(n -> n % 2 == 0)
+                .count() >= 2;
     }
 }
