@@ -13,6 +13,6 @@ public class Runner {
         int x2 = DataScanner.enterIntegerFromConsole();
         System.out.println("Введите y2: ");
         int y2 = DataScanner.enterIntegerFromConsole();
-        System.out.println(closestPointLogic.closerToOrigin(x1,y1,x2,y2));
+        System.out.println(closestPointLogic.closerToOrigin(x1, y1, x2, y2));
     }
 }
