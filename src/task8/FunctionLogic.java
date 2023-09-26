@@ -6,7 +6,7 @@ public class FunctionLogic {
         if (x >= 3) {
             return result = -x * x + 3 * x + 9;
         } else {
-            return result = 1 / (x * x * x);
+            return result = 1 / (x * x * x) - 6;
         }
     }
 }
