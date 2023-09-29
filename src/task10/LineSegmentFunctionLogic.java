@@ -7,12 +7,15 @@ public class LineSegmentFunctionLogic {
             return;
         }
         StringBuilder table = new StringBuilder();
-        table.append("Аргумент\tЗначение функции\n");
+        table.append("+-----------+---------------------+\n");
+        table.append("|  Аргумент |  Значение функции   |\n");
+        table.append("+-----------+---------------------+\n");
         for (; a < b; a += h) {
-            String argument = String.format("%.2f", a);
-            String value = String.format("%.2f", Math.tan(a));
-            table.append(argument).append("\t\t").append(value).append("\n");
+            String argument = String.format("%-1.2f", a);
+            String value = String.format("%-20.2f", Math.tan(a)); // выравнивание значения функции
+            table.append(String.format("|  %-6s |  %-18s |\n", argument, value));
         }
+        table.append("+-----------+---------------------+\n");
         System.out.println(table.toString());
     }
 }
